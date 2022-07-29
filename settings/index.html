@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meine Worts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Arsenal&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+
+</body>
+</html>
+<div id="container">
+	<div id="exercises">
+		<div class="exc-box setting-item-1">
+			<div class="exc-box-setting">
+				<form action="" method="post">
+					<label for="word_pl">Słówko po polsku:</label>
+					<input type="text" name="word_pl" autocomplete="off" />
+
+					<label for="word_de">Słówko po polsku:</label>
+					<input type="text" name="word_de" autocomplete="off" />
+
+					<select name="id_cat">
+						<?php foreach ($cat as $c) { ?>
+						<option value="<?php echo $c['id_cat']; ?>"> <?php echo $c['category']; ?> </option>
+						<?php } ?>
+					</select> 
+
+					<input type="submit" name="action" value="Dodaj słówko" />
+				</form>
+			</div>
+		</div>	
+		<div class="exc-box setting-item-2">
+			<div class="exc-box-setting ">
+				<form action="" method="post">
+					<label for="category_add">Dodaj kategorię:</label>
+					<input type="text" name="category_add" autocomplete="off" />
+
+					<input type="submit" name="action" value="Dodaj kategorię" />
+				</form>
+		</div>
+	</div>
+</div>
+</div>
+<script type="text/javascript" src="../index.js"></script>
+<script src="https://kit.fontawesome.com/329576dfc5.js" crossorigin="anonymous"></script>

@@ -1,0 +1,217 @@
+@keyframes hide{
+	0% {opacity: 1};
+	100% {opacity: 0};
+}
+
+@keyframes show{
+	0% {opacity: 0};
+	100% {opacity: 1;};
+}
+
+
+@font-face {
+  font-family: PV;
+  src: url(../fonts/Champagne-Limousines.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Thin.ttf);
+}
+
+body{
+	width: 100%;
+	font-family: poppins;
+	background: #ffffff;
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	text-align: center;
+}
+
+tr, a{
+	transition: 500ms;
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#container, #content, #page-title, #content-box{
+	position: absolute;	
+}
+
+#container, #content{
+	top: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+
+
+.menu, #exercises{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+
+.menu-box{
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	align-self: center;
+
+	min-width: 200px;
+	min-height: 150px;
+	margin: 2%;
+	padding: 10px;
+
+	border-radius: 7px;
+	box-shadow: 0 0 5px #333333;
+	background: #212f45;
+	color: #ffffff;
+	font-size: .8rem;
+
+	transition: 500ms;
+	
+}
+
+.menu-box:hover{
+	background: #006466;
+}
+
+.menu-box h1{
+	line-height: 150px;
+}
+
+
+.exc-box{
+	min-width: 400px;
+	min-height: 350px; 
+	background: #006466;
+}
+
+.hide{
+	animation: hide 500ms;
+}
+
+.hidden-error, .hidden, .hide{
+	display: none;
+}
+
+
+.good, .error{
+	animation: show 700ms;	
+}
+
+.error{
+	color: #ffffff;
+	text-align: center;
+	background: rgb(200, 200, 0);
+	margin-top: 1%;
+	border-radius: 2px;
+}
+
+.good{
+
+	text-align: center;
+	color: #70e000;
+	font-size: 3rem;
+}
+
+input{
+	width: 99%;
+	height: 40px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.word, #check, #submit{
+	width: 80%;
+	margin: 0 10%;
+}
+
+.word, #check, #submit, input{
+	border-radius: 5px;
+	border: none;
+}
+
+#buttons{
+	position: relative;
+	top: 50px;
+}
+
+#check, #submit{
+	height: 30px;
+	margin: 0% 10% 2%;
+	background-color: #ffd000;
+	transition: 500ms;
+}
+
+
+#check:active,  #submit:active{
+	background-color: #ffea00;
+
+}
+
+#check:active,  #submit:active{
+	background-color: #ffc300;
+	box-shadow: inset 0 0 10px #555555;
+
+}
+
+
+
+.word h1, .word h3{
+	color: #ffffff;
+}
+
+@media screen and (max-device-width: 560px){
+	
+.exc-box{
+	padding-top: 2%;
+	width: 90%;
+	height: 850px; 
+}
+
+.error{
+	height: 50px;
+	font-size: 2rem;
+}
+
+.good{
+	font-size: 5rem;
+}
+
+input{
+	height: 80px;
+	font-size: 60px;
+	text-align: center;
+}
+
+
+#buttons{
+	top: 7vh;
+}
+
+#check, #submit{
+	height: 100px;
+	font-size: 3rem;
+}
+
+.word h3{
+	font-size: 2rem;
+}
+
+.word h1{
+	font-size: 5rem;
+}
+
+
+}
